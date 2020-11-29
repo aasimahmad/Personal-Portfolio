@@ -972,3 +972,11 @@ margin-bottom: -3rem;
   }
 
 }
+
+html{
+  filter: invert(1) hue-rotate(180deg);
+}
+
+img {
+  filter: invert(1) hue-rotate(180deg);
+}
