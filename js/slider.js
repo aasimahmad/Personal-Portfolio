@@ -52,7 +52,7 @@ right.addEventListener('click', function rightSlide() {
   indicatorParent.children[index].classList.add('selected');
   slider.style.transform = 'translateX(' + (index) * -25 + '%)';
 
-  sliderStop();
+  //sliderStop();
 });
 
 

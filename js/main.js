@@ -1,7 +1,8 @@
 /*===== MENU SHOW Y HIDDEN =====*/
 const navMenu = document.getElementById("nav-menu"),
   toggleMenu = document.getElementById("nav-toggle"),
-  closeMenu = document.getElementById("nav-close");
+  closeMenu = document.getElementById("nav-close"),
+  navCursor = document.querySelector('.nav__logo');
 
 // SHOW
 toggleMenu.addEventListener("click", () => {
@@ -38,8 +39,65 @@ function scrollActive(){
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active');
-        }else{
+            if (sectionId != 'home') {
+              navCursor.style.display = 'block';
+            } else {
+              navCursor.style.display = 'none';
+            }
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active');
         }
     })
 }
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '80px',
+  duration: 1100,
+  reset: true
+});
+
+
+/*SCROLL HOME*/
+sr.reveal('.home__title',{}); 
+sr.reveal('.home__profession',{});
+sr.reveal('.home__data',{delay: 200}); 
+sr.reveal('.home__img',{delay: 300}); 
+sr.reveal('.home__social',{}); 
+sr.reveal('.home__social-link',{interval: 200}); 
+
+/*SCROLL ABOUT*/
+sr.reveal('.about__img',{}); 
+sr.reveal('.about__data',{delay: 200}); 
+sr.reveal('.about__information',{delay: 200}); 
+
+/*SCROLL SKILLS*/
+sr.reveal('.skills__subtitle',{}); 
+sr.reveal('.skills__content',{}); 
+sr.reveal('.skills__data',{interval: 200});
+
+/*SCROLL EXPERIENCE*/
+sr.reveal('.experience__subtitle',{}); 
+sr.reveal('.experience__content',{}); 
+
+/*SCROLL EDUCATION*/
+sr.reveal('.education__subtitle',{}); 
+sr.reveal('.education__content',{interval: 200});
+
+/*SCROLL SERVICES*/
+sr.reveal('.services__content',{interval: 200}); 
+
+sr.reveal('.project__title',{}); 
+sr.reveal('.project__description',{delay: 200});
+sr.reveal('.button',{}); 
+
+/*SCROLL WORK*/
+sr.reveal('.works__img',{interval: 100}); 
+
+sr.reveal('.quote__title',{}); 
+
+/*SCROLL CONTACT*/
+sr.reveal('.contact__input',{interval: 200}); 
+
+sr.reveal('.footer__social',{}); 

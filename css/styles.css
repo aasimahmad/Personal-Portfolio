@@ -170,7 +170,7 @@ img {
   top: 1rem;
   right: 1rem;
   font-size: 2rem;
-  color: var(--first-color-dark);
+  color: var(--first-color-light);
   cursor: pointer;
 }
 
@@ -194,6 +194,16 @@ img {
   color: var(--first-color-dark);
   font-size: 1.3rem;
   cursor: pointer;
+}
+
+.nav__logo{
+  margin-top: 70rem;
+  display: none;
+}
+
+.bxs-chevron-up-circle{
+  font-size: 2rem;
+  color: rgba(230, 159, 142, 0.7)
 }
 
 /*=== Show menu ===*/
@@ -267,7 +277,7 @@ img {
 }
 
 .home__button {
-  width: 100%;
+  width: 70%;
 }
 
 /*BUTTONS*/
