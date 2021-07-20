@@ -734,13 +734,11 @@ img {
 }
 .arrow i {
   font-size: 35px;
-  -webkit-user-select: none;
   color: var(--first-color-lighten);
   opacity: 0.3;
 }
 .arrow i:hover {
   font-size: 38px;
-  -webkit-user-select: none;
   color: var(--first-color-lighten);
   opacity: 1;
 }

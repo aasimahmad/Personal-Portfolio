@@ -53,9 +53,9 @@ function scrollActive(){
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
   origin: 'top',
-  distance: '80px',
+  distance: '70px',
   duration: 1100,
-  reset: true
+  cleanup: true
 });
 
 
@@ -70,12 +70,12 @@ sr.reveal('.home__social-link',{interval: 200});
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{}); 
 sr.reveal('.about__data',{delay: 200}); 
-sr.reveal('.about__information',{delay: 200}); 
+sr.reveal('.about__information',{delay: 100}); 
 
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle',{}); 
 sr.reveal('.skills__content',{}); 
-sr.reveal('.skills__data',{interval: 200});
+sr.reveal('.skills__data',{interval: 100});
 
 /*SCROLL EXPERIENCE*/
 sr.reveal('.experience__subtitle',{}); 
@@ -89,7 +89,7 @@ sr.reveal('.education__content',{interval: 200});
 sr.reveal('.services__content',{interval: 200}); 
 
 sr.reveal('.project__title',{}); 
-sr.reveal('.project__description',{delay: 200});
+sr.reveal('.project__description',{});
 sr.reveal('.button',{}); 
 
 /*SCROLL WORK*/

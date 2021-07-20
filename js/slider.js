@@ -7,7 +7,7 @@ const indicatorParent = document.querySelector('.control ul');
 const indicators = document.querySelectorAll('.control li');
 
 var index = 0;
-var controlTimeout;
+//var controlTimeout;
 
 indicators.forEach((indicator, i) => {
   indicator.addEventListener('click', () => {
@@ -25,7 +25,7 @@ function autoSlide() {
   indicatorParent.children[index].classList.add('selected');
   slider.style.transform = 'translateX(' + (index) * -25 + '%)';
 
-  controlTimeout = setTimeout(autoSlide, 5000);
+  controlTimeout = setTimeout(autoSlide, 4000);
 };
 
 autoSlide();
@@ -43,7 +43,6 @@ left.addEventListener('click', function leftSlide() {
 
   //sliderStop();
 });
-
 
 
 right.addEventListener('click', function rightSlide() {
